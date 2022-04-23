@@ -22,8 +22,6 @@ body {
 }
 
 #calculator {
-     /* width: 30vw; */
-    /*height: 75vh; */
     background-color: black;
     margin: 25px;
     display: grid;
@@ -62,7 +60,6 @@ button {
     cursor: pointer;    
     background-color: #333333;
     border-radius: 100%;
-    /* width: 80%; */
     margin: 6px;
     border: none;
 }
