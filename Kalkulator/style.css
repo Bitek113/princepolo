@@ -1,0 +1,86 @@
+@font-face {
+    src: url(font/SFPRODISPLAYREGULAR.OTF);
+    font-family: SFPRODISPLAYREGULAR;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: SFPRODISPLAYREGULAR;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 39, 38);
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+}
+
+#calculator {
+     /* width: 30vw; */
+    /*height: 75vh; */
+    background-color: black;
+    margin: 25px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    min-height: 90vh;
+    width: 22vw;
+}
+
+.result {
+    grid-column: 1/ -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 30px;
+}
+
+.previous_action {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255, .8);
+}
+
+.recent_action {
+    font-size: 40px;
+}
+
+button {
+    cursor: pointer;    
+    background-color: #333333;
+    border-radius: 100%;
+    /* width: 80%; */
+    margin: 6px;
+    border: none;
+}
+
+.col_two {
+    grid-column: span 2;
+}
+
+.row {
+    background-color: #a5a5a5;
+}
+
+.column {
+    background-color: #ff9e25;
+}
+
+.last_button {
+    border-radius: 40px;
+    text-align: start;
+    padding-left: 26px;
+}
